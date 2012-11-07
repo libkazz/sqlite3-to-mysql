@@ -1,5 +1,5 @@
 #/usr/bin/env sh
-cat $1 | \
+sqlite3 $1 .dump | \
 sed \
 -e '/PRAGMA.*;/ d' \
 -e '/BEGIN TRANSACTION.*/ d' \

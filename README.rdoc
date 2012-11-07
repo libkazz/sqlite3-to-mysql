@@ -6,7 +6,7 @@ to MySql sql.
 
 == Usage:
 
- sqlite3-to-mysql filename.sql > filename.new.sql
+ sqlite3-to-mysql db/development.sqlite3 | mysql -u YOURUSERNAME -p YOURDATABASE
 
 == Notes
 
